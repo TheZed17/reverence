@@ -45,9 +45,9 @@ class CatalogView(ListView):
         return context
     
 
-    class ClothingItemDetailView(DetailView):
-        model = ClothingItem
-        template_name = 'main/product/detail.html'
-        context_object_name = 'clothing_item'
-        slug_field = 'slug'
-        slug_url_kwarg = 'slug'
+class ClothingItemDetailView(DetailView):
+    model = ClothingItem
+    template_name = 'main/product/detail.html'
+    context_object_name = 'clothing_item'
+    slug_field = 'slug'
+    slug_url_kwarg = 'slug'
